@@ -1,14 +1,8 @@
 .container-header{
     display: flex;
-    align-items: center;
     margin-top: 8px;
 }
-.menu1-list__inner,.menu2-list__inner{
-    display: none;
-}
-.menu1-list,.menu2-list{
-    display: flex;
-}
+
 .logo{
     display: flex;
     align-items: center;
@@ -20,60 +14,101 @@
     text-transform: uppercase;
     color:#000;
 }
-.multitable{
-    margin-left: auto;
-}
 .logo__img{
     width: 63px;
     height: 123px;
 }
-
-.multitable-upper{
+.navigation{
     display: flex;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    z-index: 100;
 }
-.menu1-item{
-    margin-right:22px;
-}
-.menu2-item{
-    margin-right: 30px;
-}
-.menu1-link{
-    color:#818181;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-upper{
     font-weight: 300;
-    &:after{
-        content: "";
-        border: 4px solid transparent;
-        border-top-color: #818181;
-        border-bottom: 0;
+    z-index: 200;
+}
+.navbar-link{
+    color:#000;
+}
+.navbar-under{
+    font-weight: 400;
+}
+.navbar-list{
+    display: flex;
+}
+.navbar-innerlist,.navbar-inner2list{
+    display: none;
+    max-width: 280px;
+    background-color: #fff;
+    padding: 15px;
+    padding-right: 20px;
+}
+.navbar-item:hover{    
+    .navbar-innerlist{
+        display: block;
+    }
+
+}
+.navbar-inner2link,.navbar-innerlink{
+    color:#000;
+    &:hover{
+        color:#009dff;
     }
 }
-.menu2-link{
-    color:#000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-inner2list{
+    display: none;
     font-weight: 400;
-    font-size: 18px;
+}
+.navbar-inneritem:hover{
+    .navbar-inner2list{
+        display: block;
+    }
+}
+.navbar-item{
+    position: relative;
+    margin-right: 20px;
+    
+}
+.navbar-link{
+    display: flex;
+    align-items: center;
     &:after{
+        margin-left: 5px;
         content: "";
         border: 4px solid transparent;
         border-top-color: #000;
         border-bottom: 0;
+        
     }
 }
-.form-label{
-    display: flex;
-    justify-content: center;
+.navbar-innerlist{
+    position: absolute;
+    font-weight: 400;
 }
-.form-input{
-    width: 215px;
-    border:none;
-    background: #eeeeee;
-    outline: none;
-    text-indent: 15px;
-    margin-right: 10px;
+.navbar-inneritem{
+    position: relative;
+}
+.navbar-inner2list{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.navbar-innerlist li > a:not(:only-child):after, {
+
+        content: "";
+        border: 4px solid transparent;
+        border-left-color: #000;
+        border-right: 0;
+        margin-left:auto;
+    
+    }
+.navbar-innerlist li{
+    font-weight: 300;
+}
+.navbar-inneritem{
+    text-align: left;
+}
+.navbar-innerlink{
+    display: flex;
+    align-items: center;
 }

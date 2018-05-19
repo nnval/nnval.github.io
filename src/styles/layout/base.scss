@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    width:100%;
     font-family:'Open Sans',Arial,serif;
     font-weight: 400;
   }
@@ -12,8 +13,8 @@ body, html {
   }
   
   .wrapper {
-    overflow: hidden;
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
     position: relative;
   }
  .container{
