@@ -1,0 +1,35 @@
+.align-img{
+    width: 165px;
+    img{
+        width: 100%;
+    }
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.sidebar-left{
+    margin-top: 120px;
+    margin-right: 30px;
+}
+.drive{
+    margin-bottom: 60px;
+}
+.socials{
+    margin-bottom: 60px;
+    border-top:3px solid #009dff;
+}
+.useful-item{
+    margin-bottom: 30px;
+   
+}
+.useful{
+    border-top:3px solid #009dff; 
+}

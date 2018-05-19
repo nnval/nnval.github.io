@@ -1,0 +1,40 @@
+.sidebar-right__advert{
+    width: 200px;
+    height: 125px;
+    border-bottom: 2px solid #009dff;
+    margin-bottom: 30px;
+    &:las{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+   
+}
+.sidebar-right__link{
+    p{
+        font-weight: 300;
+        font-style: italic;
+        font-size: 14px;
+
+    }
+    color:#000;
+    &:hover{    
+        text-decoration: underline;
+        
+    }
+}
+.sidebar-right  {
+    margin-left: 30px;
+    margin-top: 120px;
+}
+.sidebar-right__anthem{
+    border-top:2px solid #009dff;
+    padding-top:12px;
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        color:#000;
+    }
+}
+.anthem-title{
+    font-weight: 600;
+}

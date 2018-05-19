@@ -1,0 +1,10 @@
+.cover {
+	opacity:1;
+}
+.coverParent {
+	position:relative;
+}
+#slider, .slide {
+	height: 600px;
+	width: 100%;
+}
