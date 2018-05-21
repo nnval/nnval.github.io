@@ -1,6 +1,7 @@
 .container-header{
     display: flex;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -24,49 +25,76 @@
     z-index: 100;
 }
 .navbar-upper{
+    z-index: 200;    
     font-weight: 300;
-    z-index: 200;
+    margin-left: auto;
 }
 .navbar-link{
     color:#000;
 }
+.navbar-label{
+    display: flex;
+}
+.navbar-input{
+    margin-right: 12px;
+    margin-left: 20px;
+    input{        
+        width: 210px;
+        border:none;
+        background: #eeeeee;
+        outline: none;
+    }
+}
+.navbar-form__picture{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.navbar-img{
+    width: 100%;
+    height: 100%;
+}
 .navbar-under{
     font-weight: 400;
+    margin-left: auto; 
+    font-size: 18px;   
 }
 .navbar-list{
     display: flex;
 }
-.navbar-innerlist,.navbar-inner2list{
+.navbar-innerlist{
     display: none;
     max-width: 280px;
+    min-width: 160px;
     background-color: #fff;
     padding: 15px;
     padding-right: 20px;
+    font-size: 15px;
 }
 .navbar-item:hover{    
     .navbar-innerlist{
         display: block;
     }
+    .navbar-link{
+        color:#009dff;
+    }
+    .navbar-link:after{
+        border-top-color:#009dff;
+    }
 
 }
-.navbar-inner2link,.navbar-innerlink{
+.navbar-innerlink{
     color:#000;
     &:hover{
-        color:#009dff;g
-    }
-}
-.navbar-inner2list{
-    display: none;
-    font-weight: 400;
-}
-.navbar-inneritem:hover{
-    .navbar-inner2list{
-        display: block;
+        color:#009dff;
     }
 }
 .navbar-item{
     position: relative;
     margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
     
 }
 .navbar-link{
@@ -84,29 +112,14 @@
 .navbar-innerlist{
     position: absolute;
     font-weight: 400;
+    box-shadow: 0 0 3px rgba(66, 65, 65, 0.5);
 }
 .navbar-inneritem{
     position: relative;
+    text-align: left;
 }
-.navbar-inner2list{
-    position: absolute;
-    top: 0;
-    left: 100%;
-}
-.navbar-innerlist li > a:not(:only-child):after, {
-
-        content: "";
-        border: 4px solid transparent;
-        border-left-color: #000;
-        border-right: 0;
-        margin-left:auto;
-    
-    }
 .navbar-innerlist li{
     font-weight: 300;
-}
-.navbar-inneritem{
-    text-align: left;
 }
 .navbar-innerlink{
     display: flex;
